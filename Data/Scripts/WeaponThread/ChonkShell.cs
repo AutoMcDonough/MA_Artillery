@@ -226,7 +226,7 @@ namespace WeaponThread
             },
             AmmoGraphics = new GraphicDef
             {
-                ModelName = "\\Models\\Weapons\\MA_Bertha_Projectile.mwm",
+                ModelName = "\\Models\\MA_Artillery\\MA_Bertha_Projectile.mwm",
                 VisualProbability = 1f,
                 ShieldHitDraw = true,
                 Particles = new AmmoParticleDef

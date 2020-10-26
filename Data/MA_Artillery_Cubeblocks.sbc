@@ -10,7 +10,7 @@
         <SubtypeId>MA_Bertha</SubtypeId>
       </Id>
       <DisplayName>Big Bertha Mk.II</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\missile_launcher.dds</Icon>
+      <Icon>Textures\Icons\MA_Bertha.png</Icon>
       <Description>A long range artillery of absurd proportions. It is too large and expensive to be practical, and that also applies for any ship large enough to use it. By AutoMcD Astronautical.</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -168,6 +168,143 @@
 -->	
 	
 	
+
+<!-- chonk conveyor -->
+    <Definition>
+      <Id>
+        <TypeId>Conveyor</TypeId>
+        <SubtypeId>Chonk_Conveyor</SubtypeId>
+      </Id>
+      <DisplayName>Chonk Conveyor</DisplayName>
+      <Icon>Textures\Icons\Chonk_Conveyor.png</Icon>
+      <Description>A conveyor for very large objects</Description>
+      <GuiVisible>true</GuiVisible>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="6"/>
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\MA_Artillery\Chonk_Conveyor.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="10" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="SmallTube" Count="12" />
+        <Component Subtype="Motor" Count="6" />
+        <Component Subtype="InteriorPlate" Count="4" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Large\ConveyorTubeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ConveyorTubeConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Chonk_Conveyor</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>7</BuildTimeSeconds>
+			<MountPoints>
+				<MountPoint Side="Top" StartX="0.47" StartY="0.0" EndX="2.53" EndY="6"/>
+				<MountPoint Side="Bottom" StartX="0.74" StartY="0.12" EndX="2.26" EndY="5.88"/>
+			</MountPoints>
+      <AutorotateMode>OppositeDirections</AutorotateMode>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyed_Large</DestroyEffect>
+      <DestroySound>PoofExplosionCat3</DestroySound>
+      <PCU>10</PCU>
+      <IsAirTight>false</IsAirTight>      
+    </Definition>
+ 
+
+<!-- chonk assembler -->
+        <Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
+            <Id>
+                <TypeId>Assembler</TypeId>
+                <SubtypeId>Chonk_Assembler</SubtypeId>
+            </Id>
+            <DisplayName>Chonk Ammo Assembler</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\assembler.dds</Icon>
+            <Description>Oh lawd look out</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="18" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\MA_Artillery\Chonk_Assembler.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="120" />
+                <Component Subtype="Construction" Count="80" />
+                <Component Subtype="Motor" Count="20" />
+                <Component Subtype="Display" Count="10" />
+                <Component Subtype="MetalGrid" Count="10" />
+                <Component Subtype="Computer" Count="160" />
+                <Component Subtype="SteelPlate" Count="20" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="3.0" EndY="3.0"/>
+				<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="3.0" EndY="3.0"/>
+				<MountPoint Side="Left" StartX="6.99" StartY="0.0" EndX="8.66" EndY="3.0"/>
+				<MountPoint Side="Left" StartX="16.32" StartY="0.0" EndX="17.99" EndY="3.0"/>
+				<MountPoint Side="Left" StartX="0.03" StartY="0.0" EndX="0.59" EndY="3.0"/>
+				<MountPoint Side="Left" StartX="11.1" StartY="0.0" EndX="13.85" EndY="3.0"/>
+				<MountPoint Side="Right" StartX="9.34" StartY="0.0" EndX="11.01" EndY="3.0"/>
+				<MountPoint Side="Right" StartX="0.01" StartY="0.0" EndX="1.68" EndY="3.0"/>
+				<MountPoint Side="Right" StartX="17.41" StartY="0.0" EndX="17.97" EndY="3.0"/>
+				<MountPoint Side="Right" StartX="4.15" StartY="0.0" EndX="6.9" EndY="3.0"/>
+				<MountPoint Side="Top" StartX="0.0" StartY="0.02" EndX="3.0" EndY="11.01"/>
+				<MountPoint Side="Top" StartX="0.0" StartY="17.38" EndX="3.0" EndY="18"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="6.99" EndX="3.0" EndY="17.98"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="3.0" EndY="0.62"/>
+			</MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Large\AssemblerConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\AssemblerConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Large\AssemblerConstruction_3.mwm" />
+                <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Large\AssemblerConstruction_4.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\AssemblerConstruction_5.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>Chonk_Assembler</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>80</BuildTimeSeconds>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <InventoryMaxVolume>4</InventoryMaxVolume>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>0.56</OperationalPowerConsumption>
+            <BlueprintClasses>
+                <Class>LargeBlocks</Class>
+                <Class>SmallBlocks</Class>
+                <Class>Components</Class>
+                <Class>EliteTools</Class>
+                <Class>BuildPlanner</Class>
+            </BlueprintClasses>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <PrimarySound>BlockAssembler</PrimarySound>
+            <ActionSound>BlockAssemblerProcess</ActionSound>
+            <DestroyEffect>Explosion_Missile</DestroyEffect>
+            <DestroySound>WepSmallMissileExpl</DestroySound>
+            <PCU>40</PCU>
+            <IsAirTight>true</IsAirTight>
+            <TieredUpdateTimes>
+                <unsignedInt>60</unsignedInt>
+                <unsignedInt>120</unsignedInt>
+                <unsignedInt>240</unsignedInt>
+            </TieredUpdateTimes>
+        </Definition>
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	
     </CubeBlocks>

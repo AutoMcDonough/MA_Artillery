@@ -10,6 +10,9 @@
       <Name>AutoMcD_Astronautical</Name>
       <ItemIds>
         <string>SmallMissileLauncher/MA_Bertha</string>
+		<string>Assembler/Chonk_Assembler</string>
+		<string>Conveyor/Chonk_Conveyor</string>
+		
  
       </ItemIds>
     </Category>

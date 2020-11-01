@@ -25,7 +25,7 @@ namespace WeaponThread
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
 						DurabilityMod = 0.85f,
-                        IconName = "filter_nato.dds"
+                        IconName = "MA_Bertha_Round_filter.dds"
                     },
   
                 },

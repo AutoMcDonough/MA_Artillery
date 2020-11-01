@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlueprintClasses>
+        <Class>
+            <Id>
+                <TypeId>BlueprintClassDefinition</TypeId>
+                <SubtypeId>Chonk_Ammo</SubtypeId>
+            </Id>
+            <DisplayName>Chonk_Ammo</DisplayName>
+            <Description>Chonk Ammo</Description>
+            <Icon>Textures\Icons\Chonk_Ammo_dark.dds</Icon>
+            <HighlightIcon>Textures\Icons\Chonk_Ammo.dds</HighlightIcon>
+            <FocusIcon>Textures\Icons\Chonk_Ammo_focus.dds</FocusIcon>
+            <InputConstraintIcon>Textures\GUI\Icons\MA_Bertha_Round_filter.dds</InputConstraintIcon>
+        </Class>
+
+  </BlueprintClasses>
+  <BlueprintClassEntries>
+   
+    <Entry Class="Chonk_Ammo" BlueprintSubtypeId="ChonkShell" />
+
+  </BlueprintClassEntries>
+</Definitions>

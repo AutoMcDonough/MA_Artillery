@@ -219,7 +219,7 @@
                 <SubtypeId>Chonk_Assembler</SubtypeId>
             </Id>
             <DisplayName>Chonk Ammo Assembler</DisplayName>
-            <Icon>Textures\GUI\Icons\Cubes\assembler.dds</Icon>
+            <Icon>Textures\Icons\Chonk_Assembler.png</Icon>
             <Description>Oh lawd look out</Description>
             <CubeSize>Large</CubeSize>
             <GuiVisible>false</GuiVisible>
@@ -239,18 +239,32 @@
             <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
 				<MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="3.0" EndY="3.0"/>
+				<MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="3.0" EndY="3.0"/>
 				<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="3.0" EndY="3.0"/>
-				<MountPoint Side="Left" StartX="6.99" StartY="0.0" EndX="8.66" EndY="3.0"/>
-				<MountPoint Side="Left" StartX="16.32" StartY="0.0" EndX="17.99" EndY="3.0"/>
+				<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="3.0" EndY="3.0"/>
 				<MountPoint Side="Left" StartX="0.03" StartY="0.0" EndX="0.59" EndY="3.0"/>
 				<MountPoint Side="Left" StartX="11.1" StartY="0.0" EndX="13.85" EndY="3.0"/>
-				<MountPoint Side="Right" StartX="9.34" StartY="0.0" EndX="11.01" EndY="3.0"/>
-				<MountPoint Side="Right" StartX="0.01" StartY="0.0" EndX="1.68" EndY="3.0"/>
+				<MountPoint Side="Left" StartX="7.03" StartY="0.04" EndX="8.62" EndY="2.96"/>
+				<MountPoint Side="Left" StartX="16.32" StartY="0.0" EndX="17.99" EndY="3.0"/>
+				<MountPoint Side="Left" StartX="0.03" StartY="0.0" EndX="0.59" EndY="3.0"/>
+				<MountPoint Side="Left" StartX="6.99" StartY="0.0" EndX="8.66" EndY="3.0"/>
+				<MountPoint Side="Left" StartX="16.32" StartY="0.0" EndX="17.99" EndY="3.0"/>
+				<MountPoint Side="Left" StartX="11.1" StartY="0.0" EndX="13.85" EndY="3.0"/>
 				<MountPoint Side="Right" StartX="17.41" StartY="0.0" EndX="17.97" EndY="3.0"/>
 				<MountPoint Side="Right" StartX="4.15" StartY="0.0" EndX="6.9" EndY="3.0"/>
+				<MountPoint Side="Right" StartX="9.38" StartY="0.04" EndX="10.97" EndY="2.96"/>
+				<MountPoint Side="Right" StartX="0.01" StartY="0.0" EndX="1.68" EndY="3.0"/>
+				<MountPoint Side="Right" StartX="17.41" StartY="0.0" EndX="17.97" EndY="3.0"/>
+				<MountPoint Side="Right" StartX="9.34" StartY="0.0" EndX="11.01" EndY="3.0"/>
+				<MountPoint Side="Right" StartX="0.01" StartY="0.0" EndX="1.68" EndY="3.0"/>
+				<MountPoint Side="Right" StartX="4.15" StartY="0.0" EndX="6.9" EndY="3.0"/>
+				<MountPoint Side="Top" StartX="0.0" StartY="0.06" EndX="3.0" EndY="10.96"/>
 				<MountPoint Side="Top" StartX="0.0" StartY="0.02" EndX="3.0" EndY="11.01"/>
 				<MountPoint Side="Top" StartX="0.0" StartY="17.38" EndX="3.0" EndY="18"/>
+				<MountPoint Side="Top" StartX="0.0" StartY="17.38" EndX="3.0" EndY="18"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="3.0" EndY="0.62"/>
 				<MountPoint Side="Bottom" StartX="0.0" StartY="6.99" EndX="3.0" EndY="17.98"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="7.04" EndX="3.0" EndY="17.94"/>
 				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="3.0" EndY="0.62"/>
 			</MountPoints>
             <BuildProgressModels>
@@ -264,21 +278,20 @@
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>80</BuildTimeSeconds>
             <ResourceSinkGroup>Factory</ResourceSinkGroup>
-            <InventoryMaxVolume>4</InventoryMaxVolume>
+            <InventoryMaxVolume>120</InventoryMaxVolume>
             <InventorySize>
-                <X>1</X>
-                <Y>1</Y>
-                <Z>1</Z>
+                <X>4</X>
+                <Y>4</Y>
+                <Z>12</Z>
             </InventorySize>
             <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
-            <OperationalPowerConsumption>0.56</OperationalPowerConsumption>
+            <OperationalPowerConsumption>0.75</OperationalPowerConsumption>
             <BlueprintClasses>
-                <Class>LargeBlocks</Class>
-                <Class>SmallBlocks</Class>
-                <Class>Components</Class>
-                <Class>EliteTools</Class>
-                <Class>BuildPlanner</Class>
+                <Class>Chonk_Ammo</Class>
+                <Class>Ammo</Class>
+			   
             </BlueprintClasses>
+           <AssemblySpeed>10</AssemblySpeed>			
             <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
             <DamagedSound>ParticleHeavyMech</DamagedSound>
             <PrimarySound>BlockAssembler</PrimarySound>
@@ -286,7 +299,7 @@
             <DestroyEffect>Explosion_Missile</DestroyEffect>
             <DestroySound>WepSmallMissileExpl</DestroySound>
             <PCU>40</PCU>
-            <IsAirTight>true</IsAirTight>
+            <IsAirTight>false</IsAirTight>
             <TieredUpdateTimes>
                 <unsignedInt>60</unsignedInt>
                 <unsignedInt>120</unsignedInt>

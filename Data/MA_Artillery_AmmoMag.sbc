@@ -7,15 +7,15 @@
         <SubtypeId>ChonkShell</SubtypeId>
       </Id>
       <DisplayName>Chonk Shell for Bertha</DisplayName>
-      <Icon>Textures\GUI\Icons\component\BatteryComponent.dds</Icon>
+      <Icon>Textures\Icons\MA_Bertha_Round_Component.dds</Icon>
       <Size>
         <X>3.6</X>
         <Y>3.6</Y>
         <Z>10</Z>
       </Size>
       <Mass>1750000</Mass>
-      <Volume>1</Volume>
-      <Model>Models\Components\PowerCellComponent.mwm</Model>
+      <Volume>110</Volume>
+      <Model>Models\MA_Artillery\MA_Bertha_Round_Component.mwm</Model>
       <Capacity>1</Capacity>
       <AmmoDefinitionId Subtype="ChonkShell" />
     </AmmoMagazine>
